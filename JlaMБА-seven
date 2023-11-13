@@ -1,0 +1,14 @@
+Console.WriteLine("Vvedite text  ");
+string text = Convert.ToString(Console.ReadLine());
+string[] words = text.Split(new char[] {' '});
+foreach (string word in words)
+{
+     
+    if (word.Length > 0 && word[0] == word[word.Length - 1])
+    {
+        text= word;
+       
+        Console.WriteLine($"kol-vo slov, у которых первый и последний символ одинаковый {text}");
+
+    }
+}
